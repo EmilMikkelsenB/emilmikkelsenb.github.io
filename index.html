@@ -28,16 +28,22 @@
 
 <body class="bg-primary">
 
-    <div class="p-0">
+    <div class="p-0 ">
         <div class="border border-secondary bg-primary  " id="borderBox">
-            <div class="container-fluid float-start">
+            <div class="container-fluid float-start" id="inside">
                 <div class="col">
                     <div class="container-fluid fs-1 col m-0 p-0">Emil Mikkelsen Båge</div>
                 </div>
+
                 <div class="col">
                     <div class="fs-4 mb-5">Portfolio</div>
-
                 </div>
+            </div>
+            <div class="col">
+                <canvas id="bg">
+                    <script type="module" src="ball.js"></script>
+
+                </canvas>
             </div>
             <div class="col my-5 fs-5 "><span class="float-end px-3">Born and rasied in Uppsala, Sweden<br>always
                     intrested in
@@ -50,10 +56,7 @@
                 <li projects>Contact me<a href=""></a></li>
 
             </ul>
-            <canvas id="bg">
-                <script type="module" src="ball.js"></script>
 
-            </canvas>
         </div>
 
     </div>

@@ -3,13 +3,21 @@
 #borderBox {
 	margin: 5vh;
 	height: 90vh;
+	z-index: 20;
 }
 
 body {
 	font-family: 'Noto Sans Thai', sans-serif !important;
 }
 
-canvas {
-	width: 100vh;
-	height: auto;
+#inside {
+	z-index: 1;
+}
+
+#bg {
+	position: absolute;
+	top: 25vh;
+	left: 0vh;
+	z-index: 0;
+	overflow: hidden;
 }
