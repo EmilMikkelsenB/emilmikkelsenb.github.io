@@ -7,3 +7,9 @@
 
 body {
 	font-family: 'Noto Sans Thai', sans-serif !important;
+}
+
+canvas {
+	width: 100vh;
+	height: auto;
+}
