@@ -19,3 +19,25 @@ body {
 	height: auto;
 	width: auto;
 }
+
+@media screen and (max-width:900px) {
+	#sideInfo span {
+		font-size: 1em !important;
+	}
+
+	#bg {
+		max-width: 100em;
+		height: auto;
+		display: flex;
+		left: 1em;
+		align-items: center;
+	}
+
+}
+
+@media screen and (max-width:500px) {
+	#bg {
+		display: none;
+	}
+
+}
