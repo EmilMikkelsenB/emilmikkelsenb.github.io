@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@200&display=swap');
+
+#borderBox {
+	margin: 5vh;
+	height: 90vh;
+	z-index: 20;
+}
+
+body {
+	font-family: 'Noto Sans Thai', sans-serif !important;
+	z-index: 1;
+}
+
+#inside {
+	z-index: 1;
+}
+
+#bg {
+	height: auto;
+	width: auto;
+}
