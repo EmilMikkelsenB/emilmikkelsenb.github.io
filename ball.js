@@ -29,7 +29,8 @@ const shaderMaterial = new THREE.ShaderMaterial({
     `,
     fragmentShader: `
         void main() {
-            gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);}
+            gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+        }
     `,
 });
 
@@ -41,6 +42,22 @@ scene.add(sphere);
 
 // Set the camera position
 camera.position.z = 5;
+
+// Create a function to handle window resizing
+const handleResize = () => {
+    const newWidth = window.innerWidth;
+    const newHeight = window.innerHeight;
+
+    // Update the camera aspect ratio to match the new size
+    camera.aspect = newWidth / newHeight;
+    camera.updateProjectionMatrix();
+
+    // Update the renderer size
+    renderer.setSize(newWidth, newHeight);
+};
+
+// Add a window resize event listener
+window.addEventListener('resize', handleResize);
 
 // Create an animation loop
 const animate = () => {
