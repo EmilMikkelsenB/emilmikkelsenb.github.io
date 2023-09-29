@@ -20,6 +20,11 @@ body {
 	width: auto;
 }
 
+p span img {
+	width: 3em;
+	height: auto;
+}
+
 button {
 	border: none !important;
 	background-color: transparent !important;
