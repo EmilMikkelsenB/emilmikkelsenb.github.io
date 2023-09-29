@@ -20,6 +20,24 @@ body {
 	width: auto;
 }
 
+button {
+	border: none !important;
+	background-color: transparent !important;
+}
+
+button:hover {
+	text-decoration: underline !important;
+}
+
+button:focus {
+	border: none !important;
+	outline: none !important;
+}
+
+button:focus {
+	outline: none !important;
+}
+
 @media screen and (max-width:900px) {
 	#sideInfo span {
 		font-size: 1em !important;
