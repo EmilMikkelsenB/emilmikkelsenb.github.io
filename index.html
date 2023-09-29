@@ -30,9 +30,7 @@
 
     <div class="p-0 ">
         <div class="border border-secondary bg-transparent d-flex align-items-start flex-column " id="borderBox">
-            <canvas id="bg" class="position-absolute bottom-0 end-0 z-n1">
-                <script type="module" src="ball.js"></script>
-            </canvas>
+
             <div class="container-fluid float-start" id="inside">
                 <div class="col">
                     <div class="container-fluid display-5 col mt-4 p-0">Hello, I'm Emil</div>
@@ -57,14 +55,12 @@
                 <div>
                     <p class="d-flex float-end flex-column fs-5 d-none" id="sideInfo">
                         <span id="title" class="fs-1 " id="title">About me</span>
-                        <span>Welcome to my portfolio, if you are intrested in</span>
-                        <span>what I have created, have a look at my projects.</span>
                         <span>Im currently studying to become an highschool-</span>
                         <span>engineer, and focusing on web developlent</span>
                         <span><br>Outside of programing I enjoy making
                             music</span>
                         <span>and playing guitar by myself, and with my band</span>
-                        <span><br><br><span class="fs-1 title">Skills</span><br></span>
+                        <span><br><span class="fs-1 title">Skills</span><br></span>
 
                         <span>Python ----- 3/5 </span>
                         <span>JavaScript ----- 3/5</span>
@@ -75,7 +71,7 @@
 
                     </p>
                 </div>
-                <p class="icons d-flex float-start flex-column position-fixed bottom-0 start-0 p-0 m-5">
+                <p class="icons d-flex float-start flex-column position-fixed bottom-0 start-0 p-1 m-5">
                     <span><a href="https://github.com/EmilMikkelsenB"><img class="img-fluid" src="/images/github.png"
                                 alt="github"></a></span>
                     <span><a href="https://www.linkedin.com/in/emil-mikkelsen-b%C3%A5ge-137191223/"><img
@@ -83,7 +79,9 @@
                 </p>
 
             </div>
-
+            <canvas id="bg" class="position-fixed bottom-0 start-25 z-n1">
+                <script type="module" src="ball.js"></script>
+            </canvas>
         </div>
     </div>
     </div>

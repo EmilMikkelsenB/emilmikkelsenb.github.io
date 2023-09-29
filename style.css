@@ -8,11 +8,6 @@
 
 body {
 	font-family: 'Noto Sans Thai', sans-serif !important;
-	z-index: 1;
-}
-
-#inside {
-	z-index: 1;
 }
 
 #bg {
