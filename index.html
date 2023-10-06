@@ -29,16 +29,13 @@
 <body class="bg-primary">
 
     <div class="p-0 ">
-        <div class="border border-secondary bg-transparent d-flex align-items-start flex-column " id="borderBox">
-
-            <div class="container-fluid float-start" id="inside">
-                <div class="col">
-                    <div class="container-fluid display-5 col mt-4 p-0">Hello, I'm Emil</div>
-                </div>
-
-                <div class="col  ">
+        <div class="border border-secondary bg-transparent " id="borderBox">
+            <div class="row align-items-start">
+                <div class="col-4">
+                    <div class="container-fluid display-5 col mt-4 p-0 start-0">Hello,&nbsp;I'm&nbsp;Emil
+                    </div>
                     <ul mt-5>
-                        <li class="fs-4 link-dark"> <button onclick="showObject('sideInfo')">About me </button>
+                        <li class="fs-4 link-dark"> <button onclick="showObject('sideInfo')">About&nbsp;me </button>
                         </li>
                         <li class="fs-4 link-dark"> <button onclick="showObject('projects')">Projects</button>
                         </li>
@@ -46,13 +43,18 @@
                         </li>
                         <li class="fs-4 link-dark"> <button onclick="showObject('sideInfo')">Contact</button>
                         </li>
-
-
-
-
                     </ul>
+                    <p class="icons d-flex float-start flex-column position-fixed bottom-0 my-5">
+                        <span><a href="https://github.com/EmilMikkelsenB"><img class="img-fluid"
+                                    src="/images/github.png" alt="github"></a></span>
+                        <span><a href="https://www.linkedin.com/in/emil-mikkelsen-b%C3%A5ge-137191223/"><img
+                                    class="img-fluid" src="/images/ln.png" alt="linkedIn"></a></span>
+                    </p>
                 </div>
-                <div>
+                <div class="col-4"> <canvas id="bg" class="position-fixed bottom-0  z-n1">
+                        <script type="module" src="ball.js"></script>
+                    </canvas></div>
+                <div class="col-4">
                     <p class="d-flex float-end flex-column fs-5 d-none" id="sideInfo">
                         <span id="title" class="fs-1 " id="title">About me</span>
                         <span>Im currently studying to become an highschool-</span>
@@ -69,7 +71,7 @@
                         <span>Bootstrap 5 ----- 3/5</span>
                     </p>
                     <div id="projects"
-                        class="fs-1 position-absolute top-0 end-0 p-5 m-5 d-flex flex-column text-center">
+                        class="fs-1 position-absolute top-0 end-0 p-5 m-5 d-flex flex-column text-center d-none">
                         Projects
                         <div class="scrollable-content" style="height: 60vh; overflow-y: scroll;">
                             <div class="card py-2" style="width: 15vw;">
@@ -92,19 +94,9 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <p class="icons d-flex float-start flex-column position-fixed bottom-0 end-0 p-5 m-4">
-                    <span><a href="https://github.com/EmilMikkelsenB"><img class="img-fluid" src="/images/github.png"
-                                alt="github"></a></span>
-                    <span><a href="https://www.linkedin.com/in/emil-mikkelsen-b%C3%A5ge-137191223/"><img
-                                class="img-fluid" src="/images/ln.png" alt="linkedIn"></a></span>
-                </p>
-
             </div>
-            <canvas id="bg" class="position-fixed bottom-0 start-25 z-n1">
-                <script type="module" src="ball.js"></script>
-            </canvas>
+
         </div>
     </div>
     </div>
