@@ -58,3 +58,12 @@ button:focus {
 	}
 
 }
+
+.scrollable-content {
+	scrollbar-width: none !important;     /* Firefox */
+	-ms-overflow-style: none !important;     /* Internet Explorer 11 */
+}
+
+.scrollable-content::-webkit-scrollbar {
+	width: 0 !important;     /* WebKit-based browsers (Chrome, Safari) */
+}
