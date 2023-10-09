@@ -35,13 +35,14 @@
                     <div class="container-fluid display-5 col mt-4 p-0 start-0">Hello,&nbsp;I'm&nbsp;Emil
                     </div>
                     <ul mt-5>
-                        <li class="fs-4 link-dark"> <button onclick="showObject('sideInfo')">About&nbsp;me </button>
+                        <li class="fs-4 link-dark "> <button onclick="showObject('sideInfo')">About&nbsp;me
+                            </button>
                         </li>
                         <li class="fs-4 link-dark"> <button onclick="showObject('projects')">Projects</button>
                         </li>
-                        <li class="fs-4 link-dark"> <button onclick="showObject('sideInfo')">Resumé</button>
+                        <li class="fs-4 link-dark"> <button onclick="showObject('resume')">Resumé</button>
                         </li>
-                        <li class="fs-4 link-dark"> <button onclick="showObject('sideInfo')">Contact</button>
+                        <li class="fs-4 link-dark"> <button onclick="showObject('contact')">Contact</button>
                         </li>
                     </ul>
                     <p class="icons d-flex float-start flex-column position-fixed bottom-0 my-5">
@@ -55,7 +56,7 @@
                         <script type="module" src="ball.js"></script>
                     </canvas></div>
                 <div class="col-4">
-                    <p class="d-flex float-end flex-column fs-5 d-none" id="sideInfo">
+                    <p class="d-flex float-end flex-column fs-5 d-none toggleable" id="sideInfo">
                         <span id="title" class="fs-1 " id="title">About me</span>
                         <span>Im currently studying to become an highschool-</span>
                         <span>engineer, and focusing on web developlent</span>
@@ -71,33 +72,66 @@
                         <span>Bootstrap 5 ----- 3/5</span>
                     </p>
                     <div id="projects"
-                        class="fs-1 position-absolute top-0 end-0 p-5 m-5 d-flex flex-column text-center d-none">
+                        class="fs-1 position-absolute top-0 end-0 p-5 m-5 d-flex flex-column text-center d-none toggleable">
                         Projects
-                        <div class="scrollable-content" style="height: 60vh; overflow-y: scroll;">
+                        <div class="scrollable-content " style="height: 60vh; overflow-y: scroll;">
                             <div class="card py-2" style="width: 15vw;">
-                                <img src="images/ntb.png" class="card-img-top" alt="...">
+                                <a href="https://ntig-uppsala.github.io/ntbbiluthyrning/"><img src="images/ntb.png"
+                                        class="card-img-top" alt="..."></a>
                                 <div class="card-body">
-                                    <p class="card-text fs-5">Car rental service website, made for a school project</p>
+                                    <p class="card-text fs-5">Car rental service website, made for a school project.
+                                        <br> Using: Bootstrap 5 HTML CSS JS and Json
+                                    </p>
                                 </div>
                             </div>
-                            <div class="card py-2" style="width: 15vw;">
-                                <img src="images/ntb.png" class="card-img-top" alt="...">
+                            <div class="card py-2 mt-2" style="width: 15vw;">
+                                <a href="https://ntig-uppsala.github.io/frisorsaxe/"><img src="images/saxe.png"
+                                        class="card-img-top" alt="..."></a>
                                 <div class="card-body">
-                                    <p class="card-text fs-5">Car rental service website, made for a school project</p>
+                                    <p class="card-text fs-5">Hairsalon booking/info website made for school project.
+                                        <br>Using: Bootstrap 5, HTML, CSS, JS, and Json
+                                    </p>
                                 </div>
                             </div>
-                            <div class="card py-2" style="width: 15vw;">
-                                <img src="images/ntb.png" class="card-img-top" alt="...">
+                            <div class="card py-2 mt-2" style="width: 15vw;">
+                                <a href="https://github.com/NTIG-Uppsala/bus-schedule-remastered">Github</a>
                                 <div class="card-body">
-                                    <p class="card-text fs-5">Car rental service website, made for a school project</p>
+                                    <p class="card-text fs-5">Screen for monitoring buses around the
+                                        school. <br> Using: node.js, express, HTML and JS</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+                    <p class="d-flex float-end flex-column fs-5 d-none px-2 toggleable" id="resume">
+                        <span id="title" class="fs-1 " id="title">Resumé</span>
+                        <span class="fw-bold">Frick och Hagberg Foodtruck, April 2023 - Current</span>
+                        <span>Foodtruck/Bar: customer service, cash management, bartending, kitchen <br></span>
+
+                        <span class="fw-bold">K karaoke Uppsala, March 2023 - November 2023</span>
+                        <span>Bar: customer service, bartending,<br></span>
+
+                        <span class="fw-bold">Bivaxfabriken, February 2022 - April 2023</span>
+                        <span>Production: producing, packaging<br></span>
+
+                        <span class="fw-bold">The English Bookshop, July 2021- August 2021, July 2022- August
+                            2022</span>
+                        <span>Store Clerk, customer service, management, storekeeping<br></span>
+                    </p>
+
+                    <p class="d-flex float-end flex-column fs-5 d-none px-2 toggleable" id="contact">
+                        <span id="title" class="fs-1 " id="title">Contact me!</span>
+                        <span>If you are intrested in what I have done, send me an email
+                            <a href="mailto: Emil.mikkelsenbage15@gmail.com" class="link-dark">Here!</a></span>
+                        <span></span>
+
+                    </p>
                 </div>
             </div>
-
         </div>
+
+    </div>
     </div>
     </div>
     <script src="main.js"></script>
