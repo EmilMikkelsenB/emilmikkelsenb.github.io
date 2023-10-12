@@ -20,7 +20,7 @@ const shaderMaterial = new THREE.ShaderMaterial({
         void main() {
             vec3 newPosition = position;
             // Add a sine wave effect to the Y coordinate of the points with animation
-            float waveFrequency = 5.0;
+            float waveFrequency = 7.0;
             float waveAmplitude = 0.1;
             newPosition.y += sin(newPosition.x * waveFrequency + time) * waveAmplitude;
             gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 0.5);

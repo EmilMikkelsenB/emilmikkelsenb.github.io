@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <title>EmilMB</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" href="./images/favi.png">
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -29,31 +29,34 @@
 <body class="bg-primary">
 
     <div class="p-0 ">
-        <div class="border border-secondary bg-transparent d-flex align-items-start flex-column " id="borderBox">
-
-            <div class="container-fluid float-start" id="inside">
-                <div class="col">
-                    <div class="container-fluid display-5 col mt-4 p-0">Hello, I'm Emil</div>
-                </div>
-
-                <div class="col  ">
+        <div class="border border-secondary bg-transparent " id="borderBox">
+            <div class="row align-items-start">
+                <div class="col-4">
+                    <div class="container-fluid display-5 col mt-4 p-0 start-0">Hello,&nbsp;I'm&nbsp;Emil
+                    </div>
                     <ul mt-5>
-                        <button onclick="showObject('sideInfo')">
-                            <li class="fs-4 link-dark">About me</li>
-                        </button>
-                        <a href="" color-dark>
-                            <li class="fs-4 link-dark">Projects</li>
-                        </a>
-                        <a href="">
-                            <li class="fs-4 link-dark">Experience</li>
-                        </a>
-                        <a href="">
-                            <li class="fs-4 link-dark">Contact me</li>
-                        </a>
+                        <li class="fs-4 link-dark "> <button onclick="showObject('sideInfo')">About&nbsp;me
+                            </button>
+                        </li>
+                        <li class="fs-4 link-dark"> <button onclick="showObject('projects')">Projects</button>
+                        </li>
+                        <li class="fs-4 link-dark"> <button onclick="showObject('resume')">Resumé</button>
+                        </li>
+                        <li class="fs-4 link-dark"> <button onclick="showObject('contact')">Contact</button>
+                        </li>
                     </ul>
+                    <p class="icons d-flex float-start flex-column position-fixed bottom-0 my-5">
+                        <span><a href="https://github.com/EmilMikkelsenB"><img class="img-fluid"
+                                    src="/images/github.png" alt="github"></a></span>
+                        <span><a href="https://www.linkedin.com/in/emil-mikkelsen-b%C3%A5ge-137191223/"><img
+                                    class="img-fluid" src="/images/ln.png" alt="linkedIn"></a></span>
+                    </p>
                 </div>
-                <div>
-                    <p class="d-flex float-end flex-column fs-5 d-none" id="sideInfo">
+                <div class="col-4"> <canvas id="bg" class="position-fixed bottom-0  z-n1">
+                        <script type="module" src="ball.js"></script>
+                    </canvas></div>
+                <div class="col-4">
+                    <p class="d-flex float-end flex-column fs-5 d-none toggleable" id="sideInfo">
                         <span id="title" class="fs-1 " id="title">About me</span>
                         <span>Im currently studying to become an highschool-</span>
                         <span>engineer, and focusing on web developlent</span>
@@ -62,27 +65,74 @@
                         <span>and playing guitar by myself, and with my band</span>
                         <span><br><span class="fs-1 title">Skills</span><br></span>
 
-                        <span>Python ----- 3/5 </span>
-                        <span>JavaScript ----- 3/5</span>
-                        <span>HTML5 ----- 4/5</span>
-                        <span>CSS ----- 4/5</span>
-                        <span>Bootstrap 5 ----- 3/5</span>
+                        <span>Python</span>
+                        <span>JavaScript </span>
+                        <span>HTML5 </span>
+                        <span>CSS </span>
+                        <span>Bootstrap 5 </span>
+                        <span>NodeJS</span>
+                    </p>
+                    <div id="projects"
+                        class="fs-1 position-absolute top-0 end-0 p-5 m-5 d-flex flex-column text-center d-none toggleable">
+                        Projects
+                        <div class="scrollable-content " style="height: 60vh; overflow-y: scroll;">
+                            <div class="card py-2" style="width: 15vw;">
+                                <a href="https://ntig-uppsala.github.io/ntbbiluthyrning/"><img src="images/ntb.png"
+                                        class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <p class="card-text fs-5">Car rental service website, made for a school project.
+                                        <br> Using: Bootstrap 5 HTML CSS JS and Json
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card py-2 mt-2" style="width: 15vw;">
+                                <a href="https://ntig-uppsala.github.io/frisorsaxe/"><img src="images/saxe.png"
+                                        class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <p class="card-text fs-5">Hairsalon booking/info website made for school project.
+                                        <br>Using: Bootstrap 5, HTML, CSS, JS, and Json
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card py-2 mt-2" style="width: 15vw;">
+                                <a href="https://github.com/NTIG-Uppsala/bus-schedule-remastered">Github</a>
+                                <div class="card-body">
+                                    <p class="card-text fs-5">Screen for monitoring buses around the
+                                        school. <br> Using: node.js, express, HTML and JS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+
+                    <p class="d-flex float-end flex-column fs-5 d-none px-2 toggleable" id="resume">
+                        <span id="title" class="fs-1 " id="title">Resumé</span>
+                        <span class="fw-bold">Frick och Hagberg Foodtruck, April 2023 - Current</span>
+                        <span>Foodtruck/Bar: customer service, cash management, bartending, kitchen <br></span>
+
+                        <span class="fw-bold">K karaoke Uppsala, March 2023 - November 2023</span>
+                        <span>Bar: customer service, bartending,<br></span>
+
+                        <span class="fw-bold">Bivaxfabriken, February 2022 - April 2023</span>
+                        <span>Production: producing, packaging<br></span>
+
+                        <span class="fw-bold">The English Bookshop, July 2021- August 2021, July 2022- August
+                            2022</span>
+                        <span>Store Clerk, customer service, management, storekeeping<br></span>
+                    </p>
+
+                    <p class="d-flex float-end flex-column fs-5 d-none px-2 toggleable" id="contact">
+                        <span id="title" class="fs-1 " id="title">Contact me!</span>
+                        <span>If you are intrested in what I have done, send me an email
+                            <a href="mailto: Emil.mikkelsenbage15@gmail.com" class="link-dark">Here!</a></span>
+                        <span></span>
 
                     </p>
                 </div>
-                <p class="icons d-flex float-start flex-column position-fixed bottom-0 end-0 p-1 m-5">
-                    <span><a href="https://github.com/EmilMikkelsenB"><img class="img-fluid" src="/images/github.png"
-                                alt="github"></a></span>
-                    <span><a href="https://www.linkedin.com/in/emil-mikkelsen-b%C3%A5ge-137191223/"><img
-                                class="img-fluid" src="/images/ln.png" alt="linkedIn"></a></span>
-                </p>
-
             </div>
-            <canvas id="bg" class="position-fixed bottom-0 start-25 z-n1">
-                <script type="module" src="ball.js"></script>
-            </canvas>
         </div>
+
+    </div>
     </div>
     </div>
     <script src="main.js"></script>
