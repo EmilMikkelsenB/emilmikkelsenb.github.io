@@ -1,4 +1,0 @@
-security:
-  headers:
-    Content-Security-Policy: "default-src 'self';"
-    Strict-Transport-Security: "max-age=31536000; includeSubdomains;"

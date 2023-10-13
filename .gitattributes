@@ -1,3 +1,2 @@
-*.js text/javascript
 
-./js/shape.js application/javascript
+../js/shape.js application/javascript
