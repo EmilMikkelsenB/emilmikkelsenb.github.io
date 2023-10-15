@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'C:/emilmikkelsenbage/portfolio/index.html'; /* The text */
+var txt = 'C:/users/emilmikkelsenbage/portfolio/index.html'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
