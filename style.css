@@ -14,3 +14,11 @@ div img {
     height: auto;
     width: 3rem;
 }
+
+#head {
+    transition: color 0.2s ease-out;
+}
+
+.change-color {
+    color: transparent;
+}
