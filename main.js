@@ -1,13 +1,18 @@
-function changeText(containerNum) {
+function showObject(element) {
+    let object = document.getElementById(element);
+    let elementsToHide = document.querySelectorAll('.toggleable');
+    elementsToHide.forEach(function (el) {
+        if (el !== object) {
+            el.classList.add('d-none');
+        }
+    });
 
-    let textId = document.getElementById(containerNum);
-    let textFromId = textId.textContent;
-    let headElement = document.getElementById("head");
-    headElement.classList.add('change-color');
-
-
-    setTimeout(function () {
-        headElement.innerHTML = textFromId;
-        headElement.classList.remove('change-color');
-    }, 200);
+    if (object.classList.contains("d-none")) {
+        elementsToHide.forEach(function (el) {
+            el.classList.add('d-none');
+        });
+        object.classList.remove('d-none');
+    } else {
+        object.classList.add("d-none");
+    }
 };
