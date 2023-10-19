@@ -1,24 +1,151 @@
-button,
-input[type="submit"],
-input[type="reset"] {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0 !important;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Thai:wght@200&display=swap');
 
-div img {
-    height: auto;
-    width: 3rem;
-}
+* {
+	@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Noto+Sans+Thai:wght@200&display=swap');
 
-#head {
-    transition: color 0.2s ease-out;
-}
+	button, input[type="submit"], input[type="reset"] {
+		background: none;
+		color: inherit;
+		border: none;
+		padding: 0 !important;
+		font: inherit;
+		cursor: pointer;
+		outline: inherit;
+	}
 
-.change-color {
-    color: transparent;
+	/* Styles for screens smaller than 576px (e.g., smartphones) */
+	@media screen and (max-width:575px) {
+		.bigtext {
+			font-size: 1.9em;
+		}
+
+		#box {
+			top: 0;
+			margin-top: 7vh !important;
+			width: 75vw;
+			height: 85vh;
+		}
+
+		#list {
+			top: 0 !important;
+		}
+
+		li {
+			display: inline;
+			font-size: 0.8em;
+		}
+
+		/* Add your CSS styles here for small screens */
+	}
+
+	/* Styles for screens between 576px and 767px (e.g., larger smartphones and small tablets) */
+	@media screen and (min-width:576px) and (max-width:767px) {
+		.bigtext {
+			font-size: 2.7em;
+		}
+
+		#box {
+			width: 50vw;
+			height: 85vh;
+		}
+
+		#list {
+			margin-right: 5vw;
+		}
+
+		li {
+			font-size: 0.9em;
+		}
+
+		/* Add your CSS styles here for medium-sized screens */
+	}
+
+	/* Styles for screens between 768px and 991px (e.g., tablets) */
+	@media screen and (min-width:768px) and (max-width:991px) {
+		.bigtext {
+			font-size: 3.5em;
+		}
+
+		#box {
+			width: 50vw;
+			height: 85vh;
+		}
+
+		/* Add your CSS styles here for tablets */
+	}
+
+	/* Styles for screens between 992px and 1199px (e.g., larger tablets and small desktops) */
+	@media screen and (min-width:992px) and (max-width:1199px) {
+		.bigtext {
+			font-size: 4.7em;
+		}
+
+		#box {
+			width: 60vw;
+			height: 70vh;
+		}
+
+	}
+
+	@media screen and (min-width:1200px) {
+		.bigtext {
+			font-size: 5em;
+		}
+
+		#box {
+			width: 60vw;
+			height: 70vh;
+		}
+
+	}
+
+	@media screen and (min-width:1600px) {
+		.bigtext {
+			font-size: 7.5em;
+		}
+
+		#box {
+			width: 60vw;
+			height: 70vh;
+		}
+
+	}
+
+	@media screen and (min-width:1738px) {
+		.bigtext {
+			font-size: 8em;
+		}
+
+		#box {
+			width: 60vw;
+			height: 70vh;
+		}
+
+	}
+
+	@media screen and (min-width:1800px) {
+		.bigtext {
+			font-size: 9em;
+		}
+
+		#box {
+			height: 70vh;
+			width: 75vw;
+		}
+
+	}
+
+	@media screen and (min-width:2000px) {
+		.bigtext {
+			font-size: 12em;
+			line-height: 0.85em;
+		}
+
+		#box {
+			height: 70vh;
+			width: 80vw;
+		}
+
+	}
+
 }
