@@ -20,13 +20,14 @@
             <ul class="list-unstyled mt-3 ">
                 <li><button onclick="showObject('about')">about</button></li>
                 <li><button onclick="showObject('projects')">projects</button></li>
-                <li><button>resumé</button></li>
-                <li><button>contact</button></li>
+                <li><button onclick="showObject('resume')">resumé</button></li>
+                <li><button onclick="showObject('contact')">contact</button></li>
             </ul>
         </div>
-        <div class="d-flex justify-content-center">
+        <div class=" d-flex justify-content-center">
             <div class=" m-5 border border-dark containter-fluid fs-3 p-2" id="box">
-                <div id="startpage" class="toggleable">Currently studying to become an highschool engineer focusing on
+                <div id="startpage" class="toggleable">Currently studying to become an highschool engineer
+                    focusing on
                     software
                     development.
                     <ul class="list-unstyled mt-5">
@@ -44,23 +45,89 @@
 
 
                 <div id="about" class="d-none toggleable">
-                    Hi, Im Emil. I enjoy playing guitar, fashion and programing. I have been intrested in tech and
-                    programing for a long time, and I have always had small projects to do but not anyhting major.
-                    I have been working diffrent jobs for a long time but currently working as an bartender while Im
-                    still in school. <br> Since I like both fashion and programing I enjoy, designing websites aswell as
-                    the backend
+                    Hi, Im Emil. I enjoy playing guitar, fashion and programing. I have been intrested in
+                    tech and
+                    programing for a long time, and I have always had small projects to do but not anyhting
+                    major.
+                    I have been working diffrent jobs for a long time but currently working as an bartender
+                    while Im
+                    still in school. <br> Since I like both fashion and programing I enjoy, designing
+                    websites aswell as
+                    the backend.
+                    <br>
+                    <br>
+                    Heres my Linked-in and github
+                    <ul class="list-unstyled">
+                        <li> <a href="https://github.com/EmilMikkelsenB">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/emil-mikkelsen-b%C3%A5ge-137191223/">Linked-in</a>
+                        </li>
+                    </ul>
                 </div>
 
 
-                <div class="row d-none contianer toggleable" id="projects">
-                    <div class="col3">1</div>
-                    <div class="col3">2</div>
-                    <div class="col3">3</div>
+                <div class=" d-none contianer toggleable" id="projects">
+                    <div class="row col-text">
+                        <div class="col2 w-50">
+                            <div class="text-center">Frisör Saxé</div>website made for a fictional
+                            hairsaloon. Used,
+                            HTML/CSS/JS/Bootstrap, seleniunm testing. Also using code to generate HTML files
+                            for
+                            diffrent languages.
+                        </div>
+                        <div class="col2 w-50"><a href="https://ntig-uppsala.github.io/frisorsaxe/"><img
+                                    class="img-fluid projectImg" src="./images/saxe.png" alt="saxe"></a>
+                        </div>
+                        <div class="col2 w-50">
+                            <div class="text-center">NTB Car Rental</div>Website made for a fictional car
+                            rental store,
+                            Used,
+                            HTML/CSS/JS/Bootstrap, seleniunm testing. Also using code to generate HTML files
+                            for
+                            diffrent languages. And Json for data storage, such as current cars and prices.
+                        </div>
+                        <div class="col2 w-50"><a href="https://ntig-uppsala.github.io/ntbbiluthyrning/"><img
+                                    class="img-fluid projectImg" src="./images/ntb.png" alt="saxe"></a>
+                        </div>
+                        <div class="col2 w-50">
+                            <div class="text-center">Bussign (WIP)</div> Bussign made for my school,
+                            checking what
+                            busses are coming next. Made using NodeJS, fetching info with trafiklab api and
+                            made use of
+                            sql
+                            lite
+                        </div>
+                        <div class="col2 w-50"><a href="https://github.com/NTIG-Uppsala/bus-schedule-remastered"><img
+                                    class="img-fluid projectImg" src="./images/buss.png" alt="noImageYet"></a></div>
+                    </div>
+
                 </div>
 
+                <p class="d-flex flex-column  d-none px-2 toggleable" id="resume">
+                    <span class="fw-bold">Kaliber bar , september 2023 - current</span>
+                    <span>Bar: bartending,<br></span>
+                    <span class="fw-bold">Frick och Hagberg Foodtruck, April 2023 - Current</span>
+                    <span>Foodtruck/Bar: customer service, cash management, bartending, kitchen
+                        <br></span>
+
+                    <span class="fw-bold">K karaoke Uppsala, March 2023 - November 2023</span>
+                    <span>Bar: customer service, bartending,<br></span>
+
+                    <span class="fw-bold">Bivaxfabriken, February 2022 - April 2023</span>
+                    <span>Production: producing, packaging<br></span>
+
+                    <span class="fw-bold">The English Bookshop, July 2021- August 2021, July 2022-
+                        August
+                        2022</span>
+                    <span>Store Clerk, customer service, management, storekeeping<br></span>
+                </p>
 
 
+                <div class="toggleable d-none" id="contact">
+                    If you have any questions or job offers you can always call or mail me at: 0707649613,
+                    emil.mikkelsenbage15@gmail.com
+                </div>
             </div>
+
         </div>
 
 

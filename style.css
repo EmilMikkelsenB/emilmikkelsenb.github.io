@@ -28,11 +28,24 @@
 
 		#list {
 			top: 0 !important;
+			left: 70px !important;
+			display: flex;
+			text-align: center;
+			justify-content: center;
 		}
 
 		li {
 			display: inline;
 			font-size: 0.8em;
+		}
+
+		.projectImg {
+			width: auto !important;
+			height: 6rem !important;
+		}
+
+		.col-text {
+			font-size: 0.5em !important;
 		}
 
 		/* Add your CSS styles here for small screens */
@@ -57,6 +70,15 @@
 			font-size: 0.9em;
 		}
 
+		.projectImg {
+			width: auto !important;
+			height: 6rem !important;
+		}
+
+		.col-text {
+			font-size: 0.5em !important;
+		}
+
 		/* Add your CSS styles here for medium-sized screens */
 	}
 
@@ -69,6 +91,15 @@
 		#box {
 			width: 50vw;
 			height: 85vh;
+		}
+
+		.projectImg {
+			width: auto !important;
+			height: 6rem !important;
+		}
+
+		.col-text {
+			font-size: 0.6em !important;
 		}
 
 		/* Add your CSS styles here for tablets */
@@ -85,6 +116,15 @@
 			height: 70vh;
 		}
 
+		.projectImg {
+			width: auto !important;
+			height: 11rem !important;
+		}
+
+		.col-text {
+			font-size: 0.7em !important;
+		}
+
 	}
 
 	@media screen and (min-width:1200px) {
@@ -95,6 +135,15 @@
 		#box {
 			width: 60vw;
 			height: 70vh;
+		}
+
+		.projectImg {
+			width: auto !important;
+			height: 11rem !important;
+		}
+
+		.col-text {
+			font-size: 0.7em !important;
 		}
 
 	}
@@ -109,6 +158,15 @@
 			height: 70vh;
 		}
 
+		.projectImg {
+			width: auto !important;
+			height: 12rem !important;
+		}
+
+		.col-text {
+			font-size: 0.8em !important;
+		}
+
 	}
 
 	@media screen and (min-width:1738px) {
@@ -119,6 +177,15 @@
 		#box {
 			width: 60vw;
 			height: 70vh;
+		}
+
+		.projectImg {
+			width: auto !important;
+			height: 12rem !important;
+		}
+
+		.col-text {
+			font-size: 0.8em !important;
 		}
 
 	}
@@ -133,6 +200,15 @@
 			width: 75vw;
 		}
 
+		.col-text {
+			font-size: 1em !important;
+		}
+
+		.projectImg {
+			width: auto !important;
+			height: 13rem !important;
+		}
+
 	}
 
 	@media screen and (min-width:2000px) {
@@ -144,6 +220,15 @@
 		#box {
 			height: 70vh;
 			width: 80vw;
+		}
+
+		.col-text {
+			font-size: 1em !important;
+		}
+
+		.projectImg {
+			width: auto !important;
+			height: 17rem !important;
 		}
 
 	}
