@@ -2,141 +2,149 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>EmilMB</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="./images/favi.png">
-    <!-- Bootstrap -->
+    <title>Emil Mikkelsen</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="containter-fluid">
+        <div class="bigtext border-bottom border-dark border-3 text-center">
+            <button onclick="showObject('startpage')">PORTFOLIO&nbsp;EMIL&nbsp;MIKKELSEN</button>
+        </div>
+        <div id="list" class="fs-1 mx-5 mt-5 position-absolute ">
+            <ul class="list-unstyled mt-3 ">
+                <li><button onclick="showObject('about')">about</button></li>
+                <li><button onclick="showObject('projects')">projects</button></li>
+                <li><button onclick="showObject('resume')">resumé</button></li>
+                <li><button onclick="showObject('contact')">contact</button></li>
+            </ul>
+        </div>
+        <div class=" d-flex justify-content-center">
+            <div class=" m-5 border border-dark containter-fluid fs-3 p-2" id="box">
+                <div id="startpage" class="toggleable">Currently studying to become an highschool engineer
+                    focusing on
+                    software
+                    development.
+                    <ul class="list-unstyled mt-5">
+                        <span>I have experience in:</span>
+                        <li>HTML</li>
+                        <li>CSS/Bootstrap</li>
+                        <li>JS/Node</li>
+                        <li>Python</li>
+                        <li>Automatic test</li>
+                        <li>Figma</li>
+                        <li>Adobe Photoshop </li>
+                        <li>Adobe Illustrator </li>
+                    </ul>
+                </div>
+
+
+                <div id="about" class="d-none toggleable">
+                    Hi, Im Emil. I enjoy playing guitar, fashion and programing. I have been intrested in
+                    tech and
+                    programing for a long time, and I have always had small projects to do but not anyhting
+                    major.
+                    I have been working diffrent jobs for a long time but currently working as an bartender
+                    while Im
+                    still in school. <br> Since I like both fashion and programing I enjoy, designing
+                    websites aswell as
+                    the backend.
+                    <br>
+                    <br>
+                    Heres my Linked-in and github
+                    <ul class="list-unstyled">
+                        <li> <a href="https://github.com/EmilMikkelsenB">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/emil-mikkelsen-b%C3%A5ge-137191223/">Linked-in</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class=" d-none contianer toggleable" id="projects">
+                    <div class="row col-text">
+                        <div class="col2 w-50">
+                            <div class="text-center">Frisör Saxé</div>website made for a fictional
+                            hairsaloon. Used,
+                            HTML/CSS/JS/Bootstrap, seleniunm testing. Also using code to generate HTML files
+                            for
+                            diffrent languages.
+                        </div>
+                        <div class="col2 w-50"><a href="https://ntig-uppsala.github.io/frisorsaxe/"><img
+                                    class="img-fluid projectImg" src="./images/saxe.png" alt="saxe"></a>
+                        </div>
+                        <div class="col2 w-50">
+                            <div class="text-center">NTB Car Rental</div>Website made for a fictional car
+                            rental store,
+                            Used,
+                            HTML/CSS/JS/Bootstrap, seleniunm testing. Also using code to generate HTML files
+                            for
+                            diffrent languages. And Json for data storage, such as current cars and prices.
+                        </div>
+                        <div class="col2 w-50"><a href="https://ntig-uppsala.github.io/ntbbiluthyrning/"><img
+                                    class="img-fluid projectImg" src="./images/ntb.png" alt="saxe"></a>
+                        </div>
+                        <div class="col2 w-50">
+                            <div class="text-center">Bussign (WIP)</div> Bussign made for my school,
+                            checking what
+                            busses are coming next. Made using NodeJS, fetching info with trafiklab api and
+                            made use of
+                            sql
+                            lite
+                        </div>
+                        <div class="col2 w-50"><a href="https://github.com/NTIG-Uppsala/bus-schedule-remastered"><img
+                                    class="img-fluid projectImg" src="./images/buss.png" alt="noImageYet"></a></div>
+                    </div>
+
+                </div>
+
+                <p class="d-flex flex-column  d-none px-2 toggleable" id="resume">
+                    <span class="fw-bold">Kaliber bar , september 2023 - current</span>
+                    <span>Bar: bartending,<br></span>
+                    <span class="fw-bold">Frick och Hagberg Foodtruck, April 2023 - Current</span>
+                    <span>Foodtruck/Bar: customer service, cash management, bartending, kitchen
+                        <br></span>
+
+                    <span class="fw-bold">K karaoke Uppsala, March 2023 - November 2023</span>
+                    <span>Bar: customer service, bartending,<br></span>
+
+                    <span class="fw-bold">Bivaxfabriken, February 2022 - April 2023</span>
+                    <span>Production: producing, packaging<br></span>
+
+                    <span class="fw-bold">The English Bookshop, July 2021- August 2021, July 2022-
+                        August
+                        2022</span>
+                    <span>Store Clerk, customer service, management, storekeeping<br></span>
+                </p>
+
+
+                <div class="toggleable d-none" id="contact">
+                    If you have any questions or job offers you can always call or mail me at: 0707649613,
+                    emil.mikkelsenbage15@gmail.com
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
-    <link href="./css/custom.css" rel="stylesheet">
-
-
-
-    <style>
-    </style>
-
-</head>
-
-<body class="bg-primary">
-
-    <div class="p-0 ">
-        <div class="border border-secondary bg-transparent " id="borderBox">
-            <div class="row align-items-start">
-                <div class="col-4">
-                    <div class="container-fluid display-5 col mt-4 p-0 start-0">Hello,&nbsp;I'm&nbsp;Emil
-                    </div>
-                    <ul mt-5>
-                        <li class="fs-4 link-dark "> <button onclick="showObject('sideInfo')">About&nbsp;me
-                            </button>
-                        </li>
-                        <li class="fs-4 link-dark"> <button onclick="showObject('projects')">Projects</button>
-                        </li>
-                        <li class="fs-4 link-dark"> <button onclick="showObject('resume')">Resumé</button>
-                        </li>
-                        <li class="fs-4 link-dark"> <button onclick="showObject('contact')">Contact</button>
-                        </li>
-                    </ul>
-                    <p class="icons d-flex float-start flex-column position-fixed bottom-0 mb-5 pb-3">
-                        <span><a href="https://github.com/EmilMikkelsenB"><img class="img-fluid"
-                                    src="./images/github.png" alt="github"></a></span>
-                        <span><a href="https://www.linkedin.com/in/emil-mikkelsen-b%C3%A5ge-137191223/"><img
-                                    class="img-fluid" src="./images/ln.png" alt="linkedIn"></a></span>
-                    </p>
-                </div>
-                <div class="col-4"> <canvas id="bg" class="position-fixed bottom-0  z-n1">
-                        <script type="module" src="./js/shape.js"></script>
-                    </canvas></div>
-                <div class="col-4">
-                    <p class="d-flex float-end flex-column fs-5 d-none toggleable" id="sideInfo">
-                        <span id="title" class="fs-1 " id="title">About me</span>
-                        <span>Im currently studying to become an highschool-</span>
-                        <span>engineer, and focusing on web developlent</span>
-                        <span><br>Outside of programing I enjoy making
-                            music</span>
-                        <span>and playing guitar by myself, and with my band</span>
-                        <span><br><span class="fs-1 title">Skills</span><br></span>
-
-                        <span>Python</span>
-                        <span>JavaScript </span>
-                        <span>HTML5 </span>
-                        <span>CSS </span>
-                        <span>Bootstrap 5 </span>
-                        <span>NodeJS</span>
-                    </p>
-                    <div id="projects"
-                        class="fs-1 position-absolute top-0 end-0 p-5 m-5 d-flex flex-column text-center d-none toggleable">
-                        Projects
-                        <div class="scrollable-content " style="height: 60vh; overflow-y: scroll;">
-                            <div class="card py-2" style="width: 15vw;">
-                                <a href="https://ntig-uppsala.github.io/ntbbiluthyrning/"><img src="images/ntb.png"
-                                        class="card-img-top" alt="..."></a>
-                                <div class="card-body">
-                                    <p class="card-text fs-5">Car rental service website, made for a school project.
-                                        <br> Using: Bootstrap 5 HTML CSS JS and Json
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card py-2 mt-2" style="width: 15vw;">
-                                <a href="https://ntig-uppsala.github.io/frisorsaxe/"><img src="images/saxe.png"
-                                        class="card-img-top" alt="..."></a>
-                                <div class="card-body">
-                                    <p class="card-text fs-5">Hairsalon booking/info website made for school project.
-                                        <br>Using: Bootstrap 5, HTML, CSS, JS, and Json
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card py-2 mt-2" style="width: 15vw;">
-                                <a href="https://github.com/NTIG-Uppsala/bus-schedule-remastered">Github</a>
-                                <div class="card-body">
-                                    <p class="card-text fs-5">Screen for monitoring buses around the
-                                        school. <br> Using: node.js, express, HTML and JS</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <p class="d-flex float-end flex-column fs-5 d-none px-2 toggleable" id="resume">
-                        <span id="title" class="fs-1 " id="title">Resumé</span>
-                        <span class="fw-bold">Frick och Hagberg Foodtruck, April 2023 - Current</span>
-                        <span>Foodtruck/Bar: customer service, cash management, bartending, kitchen <br></span>
-
-                        <span class="fw-bold">K karaoke Uppsala, March 2023 - November 2023</span>
-                        <span>Bar: customer service, bartending,<br></span>
-
-                        <span class="fw-bold">Bivaxfabriken, February 2022 - April 2023</span>
-                        <span>Production: producing, packaging<br></span>
-
-                        <span class="fw-bold">The English Bookshop, July 2021- August 2021, July 2022- August
-                            2022</span>
-                        <span>Store Clerk, customer service, management, storekeeping<br></span>
-                    </p>
-
-                    <p class="d-flex float-end flex-column fs-5 d-none px-2 toggleable" id="contact">
-                        <span id="title" class="fs-1 " id="title">Contact me!</span>
-                        <span>If you are intrested in what I have done, send me an email
-                            <a href="mailto: Emil.mikkelsenbage15@gmail.com" class="link-dark">Here!</a></span>
-                        <span></span>
-
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    </div>
-    </div>
-    <script src="./js/main.js"></script>
-
 </body>
 
 </html>
