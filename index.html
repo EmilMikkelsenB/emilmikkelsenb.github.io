@@ -8,28 +8,25 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
 </head>
 
 <body>
-    <div class="containter-fluid">
+    <div class="container-fluid">
         <div class="bigtext border-bottom border-dark border-3 text-center">
             <button onclick="showObject('startpage')">PORTFOLIO&nbsp;EMIL&nbsp;MIKKELSEN</button>
         </div>
-        <div id="list" class="fs-1 mx-5 mt-5 position-absolute ">
-            <ul class="list-unstyled mt-3 ">
+        <div id="list" class="fs-1 mx-5 mt-5 position-absolute">
+            <ul class="list-unstyled mt-3">
                 <li><button onclick="showObject('about')">about</button></li>
                 <li><button onclick="showObject('projects')">projects</button></li>
                 <li><button onclick="showObject('resume')">resumé</button></li>
                 <li><button onclick="showObject('contact')">contact</button></li>
             </ul>
         </div>
-        <div class=" d-flex justify-content-center">
-            <div class=" m-5 border border-dark containter-fluid fs-3 p-2" id="box">
-                <div id="startpage" class="toggleable">Currently studying to become an highschool engineer
-                    focusing on
-                    software
-                    development.
+        <div class="d-flex justify-content-center">
+            <div class="m-5 border border-dark container-fluid fs-3 p-2" id="box">
+                <div id="startpage" class="toggleable">
+                    Currently studying to become a high school engineer focusing on software development.
                     <ul class="list-unstyled mt-5">
                         <span>I have experience in:</span>
                         <li>HTML</li>
@@ -39,113 +36,77 @@
                         <li>Automatic tests</li>
                         <li>Figma</li>
                         <li>SQL and other databases</li>
-                        <li>Adobe Photoshop </li>
-                        <li>Adobe Illustrator </li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
                     </ul>
                 </div>
-
 
                 <div id="about" class="d-none toggleable">
-                    Hi, Im Emil. I enjoy playing guitar, fashion and programing. I have been intrested in
-                    tech and
-                    programing for a long time, and I have always had small projects to do but not anyhting
-                    major.
-                    I have been working diffrent jobs for a long time but currently working as an bartender
-                    while Im
-                    still in school. <br> Since I like both fashion and programing I enjoy, designing
-                    websites aswell as
-                    the backend.
+                    Hi, I'm Emil. I enjoy playing guitar, fashion, and programming. I have been interested in tech and
+                    programming for a long time, and I have always had small projects to do but nothing major. I have
+                    been working different jobs for a long time but currently working as a bartender while I'm still in
+                    school. <br> Since I like both fashion and programming, I enjoy designing websites as well as the
+                    backend.
                     <br>
                     <br>
-                    Heres my Linked-in and github
+                    Here's my Linked-in and GitHub
                     <ul class="list-unstyled">
-                        <li> <a href="https://github.com/EmilMikkelsenB">Github</a></li>
-                        <li><a href="https://www.linkedin.com/in/emil-mikkelsen-b%C3%A5ge-137191223/">Linked-in</a>
-                        </li>
+                        <li> <a href="https://github.com/EmilMikkelsenB">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/emil-mikkelsen-b%C3%A5ge-137191223/">LinkedIn</a></li>
                     </ul>
                 </div>
 
-
-                <div class=" d-none contianer toggleable" id="projects">
+                <div class="d-none container toggleable" id="projects">
                     <div class="row col-text">
                         <div class="col2 w-50">
-                            <div class="text-center">Frisör Saxé</div>Website made for a fictional
-                            hairsaloon. Used,
-                            HTML/CSS/JS/Bootstrap, seleniunm testing. Also using code to generate HTML files
-                            for
-                            diffrent languages.
+                            <div class="text-center">Frisör Saxé</div>Website made for a fictional hairsalon. Used,
+                            HTML/CSS/JS/Bootstrap, Selenium testing. Also using code to generate HTML files for
+                            different languages.
                         </div>
                         <div class="col2 w-50"><a href="https://ntig-uppsala.github.io/frisorsaxe/"><img
-                                    class="img-fluid projectImg" src="./images/saxe.png" alt="saxe"></a>
-                        </div>
+                                    class="img-fluid projectImg" src="./images/saxe.png" alt="saxe"></a></div>
                         <div class="col2 w-50">
-                            <div class="text-center">NTB Car Rental</div>Website made for a fictional car
-                            rental store,
-                            Used,
-                            HTML/CSS/JS/Bootstrap, seleniunm testing. Also using code to generate HTML files
-                            for
-                            diffrent languages. And Json for data storage, such as current cars and prices.
+                            <div class="text-center">NTB Car Rental</div>Website made for a fictional car rental store,
+                            Used, HTML/CSS/JS/Bootstrap, Selenium testing. Also using code to generate HTML files for
+                            different languages. And JSON for data storage, such as current cars and prices.
                         </div>
                         <div class="col2 w-50"><a href="https://ntig-uppsala.github.io/ntbbiluthyrning/"><img
-                                    class="img-fluid projectImg" src="./images/ntb.png" alt="saxe"></a>
-                        </div>
+                                    class="img-fluid projectImg" src="./images/ntb.png" alt="saxe"></a></div>
                         <div class="col2 w-50">
-                            <div class="text-center">Bussign (WIP)</div> Bussign made for my school,
-                            checking what
-                            busses are coming next. Made using NodeJS, fetching info with trafiklab api and
-                            made use of
-                            sql
-                            lite
+                            <div class="text-center">Bussign (WIP)</div> Bussign made for my school, checking what buses
+                            are coming next. Made using NodeJS, fetching info with trafiklab API and made use of SQLite.
                         </div>
                         <div class="col2 w-50"><a href="https://github.com/NTIG-Uppsala/bus-schedule-remastered"><img
                                     class="img-fluid projectImg" src="./images/buss.png" alt="noImageYet"></a></div>
                     </div>
-
                 </div>
 
-                <p class="d-flex flex-column  d-none px-2 toggleable" id="resume">
-                    <span class="fw-bold">Kaliber bar , september 2023 - current</span>
+                <p class="d-flex flex-column d-none px-2 toggleable" id="resume">
+                    <span class="fw-bold">Kaliber bar, September 2023 - current</span>
                     <span>Bar: bartending<br></span>
                     <span class="fw-bold">Frick och Hagberg Foodtruck, April 2023 - Current</span>
-                    <span>Foodtruck/Bar: customer service, cash management, bartending, kitchen
-                        <br></span>
+                    <span>Foodtruck/Bar: customer service, cash management, bartending, kitchen<br></span>
 
                     <span class="fw-bold">K karaoke Uppsala, March 2023 - November 2023</span>
-                    <span>Bar: customer service, bartending,<br></span>
+                    <span>Bar: customer service, bartending<br></span>
 
                     <span class="fw-bold">Bivaxfabriken, February 2022 - April 2023</span>
                     <span>Production: producing, packaging<br></span>
 
-                    <span class="fw-bold">The English Bookshop, July 2021- August 2021, July 2022-
-                        August
-                        2022</span>
+                    <span class="fw-bold">The English Bookshop, July 2021- August 2021, July 2022- August 2022</span>
                     <span>Store Clerk, customer service, management, storekeeping<br></span>
                 </p>
 
-
                 <div class="toggleable d-none" id="contact">
-                    If you have any questions or job offers you can always call or mail me at: 0707649613,
+                    If you have any questions or job offers, you can always call or email me at: 0707-649613,
                     emil.mikkelsenbage15@gmail.com
                 </div>
             </div>
-
         </div>
-
-
-
-
-
     </div>
-
-
 
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+    <script src="https://cdn.jsdelivr.net
